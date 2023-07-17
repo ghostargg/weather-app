@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.app {
+  margin: 2rem;
+  padding: 1rem;
+  border: 2px solid lightgrey;
+  border-radius: 0.25rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.weather-table {
+  margin-top: 2rem;
+}
+
+.weather-table__th,
+.weather-table__td {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.weather-table__th {
+  background-color: lightgrey;
+}
+
+.search-button,
+.town-select {
+  padding: 8px;
+  border: 2px solid lightgrey;
+  border-radius: 0.25rem;
+  background-color: white;
+  font-weight: bold;
+}
+
+.town-select:hover,
+.search-button:hover {
+  border-color: rgb(66, 172, 66);
+  cursor: pointer;
+}
+
+.town-select:focus {
+  outline: none;
+}
+
+.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+}
+
+@media (max-width: 460px) {
+  .app {
+    margin: 1rem 0;
+    padding: 0.4rem;
+  }
+}
